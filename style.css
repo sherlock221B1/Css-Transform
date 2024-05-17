@@ -1,0 +1,45 @@
+/* 
+    transform ကို css မှာနဂို ပါလာတဲ့ build in function တွေနဲ့တွဲသုံးတယ်။(ဥပမာ- js မှာဆိုရင် console.log လိုမျိုး)
+    ** transform build in function တွေကို တစ်ကြောင်းချင်းခွဲရေးလို့မရ။ ကြားထဲမှာ space ခံပြီး တစ်ကြောင်းတည်းရေးပေးရမည်။ line 42မှာကြည့်။
+
+ *transform: rotate*
+- transform: rotate(45deg) ဆိုရင် 45 ဒီဂရီ လှည့်သွားမယ်။
+- tansform origin ကို ဘာမှမပေးထားရင် ဝင်ရိုးကို အလယ်မှာ ထားပြီးလှည့်မယ်။
+- leftပေးလိုက်ရင် ဘယ်မှာထားပြီးလှည့်မယ်။ right ပေးရင် ညာမှာ ထားပြီးလှည့်မယ်။
+
+ *transform: scale*
+- transform: scale(3)  ဆိုရင် သုံးဆကြီးသွားမယ်။
+- transform: scale(0.5) ဆိုရင် နှစ်ဆငယ်သွားမယ်။
+
+ *transform : translateX and translateY* 
+- translate : translateX ဆိုရင် X ဝင်ရိုးအတိုင်းရွေ့မယ်။
+- X မှာ + ရင်ညာ  - ရင်ဘယ်။
+
+- Y ဆိုရင် Y ဝင်ရိုးအတိုင်ရွေ့မယ်။
+- Y မှာ + ရင်အောက် - ရင်ပေါ်။
+
+** X နဲ့ Y ကို တစ်ခါတည်းပေးချင်ရင် translate() ကိုသုံး။ သူက parameter နှစ်ခုလက်ခံတယ်။
+ပထမတစ်ခုက X ဒုတိယတစ်ခုက Y
+
+*/
+
+body{
+    background-color: rgb(136, 136, 127);
+}
+.container{
+    max-width: 1000px;
+}
+.transform{
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    background-color: yellow;
+    transition: all 4s ease-in ;
+
+}
+.startTransform{
+    background-color: rgb(245, 58, 52);
+    transform: scale(2) translate(250px,200px);
+}
